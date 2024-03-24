@@ -11,16 +11,17 @@ To get started with this project, follow these steps:
 - Java 8 or higher installed
 - Maven installed
 - IntelliJ IDEA Ultimate installed
+- xampp installed
 
 ### Installation
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/3310N/JEE_InevDeps_ProdManagment.git
     ```
 2. Open the project in IntelliJ IDEA.
 3. Run the project.
-4. Open a web browser and navigate to `http://localhost:8080`.
+4. Open a web browser and navigate to `http://localhost:8085`.
 
 ## Usage
 
@@ -50,6 +51,7 @@ The application allows you to perform the following operations:
 - MySQL
 - Lombok
 
+
 ## Resources
 
 - [Spring Boot](https://spring.io/projects/spring-boot)
@@ -60,10 +62,35 @@ The application allows you to perform the following operations:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 ## Screanshots of the application
-
-1. Project creation
+1. Creation of Spring project with the dependencies JPA, H2, Spring Web, and Lombok
+* Project creation
    ![Screenshot](src/main/resources/static/screens/Project_Creation.png)
-2. 
+* Dependencies
+    ![Screenshot](src/main/resources/static/screens/Dependencies.png)
+2. Creation of the JPA entity Product with the attributes:
+
+   `id of type Long`,
+   `name of type String,`,
+   `price of type double,`,
+   `quantity of type int`.
+
+![Screenshot](src/main/resources/static/screens/Product_Entity.png)
+
+3. Configuration of the perstance properties in the application.properties file
+
+![Screenshot](src/main/resources/static/screens/application_properties.png)
+
+4. Creation of the ProductRepository interface that extends the JpaRepository interface
+
+![Screenshot](src/main/resources/static/screens/ProductRepository.png)
+
+5. Tests of the ProductRepository interface
+
+![Screenshot](src/main/resources/static/screens/ProductRepositoryTest.png)
+
+6. Merge From H2 to MySQL
+
+![Screenshot](src/main/resources/static/screens/MergeFromH2ToMySQL.png)
 
 
 ## License

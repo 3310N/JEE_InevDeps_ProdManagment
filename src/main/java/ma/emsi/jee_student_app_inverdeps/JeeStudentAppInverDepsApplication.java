@@ -27,21 +27,30 @@ public class JeeStudentAppInverDepsApplication implements CommandLineRunner {
 			System.out.println(p.toString());
 		});
 
-		Product product=productRepository.findById(Long.valueOf(1)).get();
+		Product product=productRepository.findById(1L).get();
+		System.out.println("---------------------");
 		System.out.println("**********");
 		System.out.println(product.getId());
 		System.out.println(product.getName());
 		System.out.println(product.getQuantity());
 		System.out.println("**********");
 		System.out.println("---------------------");
+		System.out.println("Test findByNameContains : ");
 		List<Product> productList= productRepository.findByNameContains("t");
 
 		productList.forEach(System.out::println);
 
 		System.out.println("---------------------");
+		System.out.println("Test search : ");
 
 		List<Product> productList2= productRepository.search("%C%");
 		productList2.forEach(System.out::println);
+
+		System.out.println("---------------------");
+		System.out.println("Test findByPriceGreaterThan : ");
+
+		List<Product> productList3= productRepository.findByPriceGreaterThan(2000);
+		productList3.forEach(System.out::println);
 
 
 	}
