@@ -92,6 +92,9 @@ The application allows you to perform the following operations:
 
 ![Screenshot](src/main/resources/static/screens/MergeFromH2ToMySQL.png)
 
+7. Implementation of the Restful API ProductRestService
+
+![Screenshot](src/main/resources/static/screens/ProductRestService.png)
 
 ## License
 
