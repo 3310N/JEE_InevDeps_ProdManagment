@@ -17,7 +17,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/3310N/JEE_InevDeps_ProdManagment.git
+   git clone https://github.com/3310N/JEE_Spring_MVC_Thymeleaf.git
     ```
 2. Open the project in IntelliJ IDEA.
 3. Run the project.
@@ -27,13 +27,11 @@ To get started with this project, follow these steps:
 
 The application allows you to perform the following operations:
 
-- Create a new product
-- Update an existing product
-- Delete a product
-- View a list of all products
-- View a product by ID
-- Search for a product by name
-- Sort products by name, price, or category
+- Afficher les patients
+- Faire la pagination
+- Chercher les patients
+- Supprimer un patient
+- Faire des améliorations supplémentaires
 
 ## Objectives
 
@@ -60,6 +58,9 @@ The application allows you to perform the following operations:
 - [MySQL](https://www.mysql.com/)
 - [Lombok](https://projectlombok.org/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+
+## Class Diagram
+![Screenshot](src/main/resources/static/screens/Class_Diagram.png)
 
 ## Screanshots of the application
 1. Creation of Spring project with the dependencies JPA, H2, Spring Web, and Lombok

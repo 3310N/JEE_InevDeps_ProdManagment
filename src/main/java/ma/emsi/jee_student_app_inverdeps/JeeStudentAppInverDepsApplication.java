@@ -18,7 +18,7 @@ public class JeeStudentAppInverDepsApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... args) {
 		//productRepository.save(new Product(null, "Computer", 6700, 3));
 		//productRepository.save(new Product(null, "Printer", 5400, 6));
 		//productRepository.save(new Product(null, "Smart Phone", 1900, 52));
